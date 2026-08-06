@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">Huy Le</a>
+        <nav>
+            <a href="homepage.html"class="active">Home</a>
+            <a href="education.html">Education</a>
+            <a href="awards.html">Awards</a>
+            <a href="project.html">Project</a>
+            <a href="#">Login</a>
+        </nav>
+    </header>
+    <section class="projects_section">
+        <br>
+        <h2>
+            <span>
+                My Projects
+            </span> 
+        </h2><br>
+        <div class="projects">
+            <div class="project_card">
+                <h3>
+                    <span>
+                        Backend for an e-commerce system
+                    </span>
+                </h3> <br>
+                <ul>
+                    <li>Framework: FastAPI</li>
+                    <li>Database: PostgreSQL</li>
+                    <li>Authentication & Security: JWT (JSON Web Tokens), Passlib (Bcrypt)</li><br>
+                    <p>System Description: A high-performance, asynchronous RESTful API backend for an e-commerce platform built with FastAPI and PostgreSQL. The system manages user authentication, dynamic product catalogs, cart processing, and secure checkout workflows. Features include JWT-based role authorization (Admin/Customer), Redis caching for fast product queries, background processing for order notifications via Celery, and seamless integration with third-party payment and shipping providers. Fully containerized with Docker for scalable deployment.</p> 
+                </ul>
+            </div>
+            <div class="project_card">   
+                <h3>
+                    <span>
+                        English to Script Translator Tool
+                    </span>
+                </h3> <br>
+                <ul>
+                    <li>Language & Runtime: Python, Click / Typer (CLI Framework)</li>
+                    <li>AI & NLP: OpenAI API (GPT-4o) / DeepL API, NLTK, Regex</li>
+                    <li>Data Formatting: Rich / Colorama (Terminal UI), Pydantic</li> <br>
+                    <p>System Description: A lightweight Command-Line Interface (CLI) tool built with Python that automatically parses and translates English text into structured video/movie scripts directly from the terminal. The tool leverages LLM APIs (OpenAI/DeepL) and custom NLP rules to format translations into standard script layouts, including scene headings, character dialogues, and stage directions. Features include custom file-to-file processing (.txt, .docx), interactive terminal prompts with real-time status bars, and configurable output styling.</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

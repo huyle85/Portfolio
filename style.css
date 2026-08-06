@@ -1,0 +1,254 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgba(32, 21, 11, 0.938);
+    --secondary-color: white;
+    --backgroud-color: rgba(32, 21, 11, 0.938);
+    --text-color: rgb(180, 120, 51);
+    --font-size: 25px;
+    --border-radius: 30%;
+}
+
+html {
+    display: flex;
+    background-color: var(--backgroud-color);
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--backgroud-color);
+    color: aliceblue;
+}
+
+header {
+    display: flex;
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.9s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+nav a {
+    font-size: var(--font-size);
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 3rem;
+    font-weight: 300;
+    transition: 0.8s ease;
+}
+
+nav a:hover,
+nav a.active {
+    padding: 0.8rem;
+    color: var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+}
+
+@media(max-width:1024px) {
+    nav {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 25%;
+        border-left: 2px solid rgb(243, 119, 119);
+        border-bottom-left-radius: 5rem;
+        padding: 1rem;
+        background-color: var(--backgroud-color);
+        border-top: 0.1rem solid rgb(243, 119, 119);
+    }
+
+    /* nav.active {
+        display: block;
+    } */
+
+    nav a {
+        display: block;
+        font-size: 1.2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: var(--backgroud-color);
+}
+
+.home .home_contex h1 {
+    font-size: var(--font-size);
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+span {
+    color: var(--text-color);
+
+}
+
+.home_contex h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home_contex p {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.home_img {
+    border-radius: var(--border-radius);
+}
+
+.home_img img {
+    position: relative;
+    width: 30vw;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 25px;
+    transition: 0.2s linear;
+}
+
+.social_user p {
+    color: var(--text-color);
+}
+
+.social_user p a {
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.education {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: var(--backgroud-color);
+}
+
+.education_img {
+    border-radius: var(--border-radius);
+}
+
+.education_img img {
+    margin-top: 4rem;
+    margin-left: 4rem;
+    position: relative;
+    width: 30vw;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 25px;
+    transition: 0.2s linear;
+}
+
+.education_context {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.education_context p{
+    font-size: 1.5rem;
+
+}
+.awards{
+    padding-top: 11rem;
+}
+.awards_context{
+    font-size: 1.5rem;
+}
+.context{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.projects_section{
+    margin: 2rem;
+}
+.projects_section span{
+    font-size: 2.5rem;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.project_card{
+    
+    background-color: rgb(71, 58, 49);
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.project_card li{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+.project_card p{
+    font-size: 1.4rem;
+    margin-left: 1rem;
+}
+@media (max-width: 768px) {
+
+    .home,
+    .education {
+        gap: 4rem;
+    }
+
+    .home_img img,
+    .education_img img{
+        width: 50vw;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1024px) {
+
+    .home,
+    .education,
+    .awards {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+}
