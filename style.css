@@ -34,7 +34,7 @@ header {
     background-color: transparent;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 99;
 }
 
 .menu_mobile {
@@ -464,7 +464,7 @@ span {
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 1000;
+        z-index: 99;
     }
         .form_gird2{
         grid-template-columns: 1fr;
@@ -500,7 +500,7 @@ span {
         position: fixed;
         top: 20px;
         right: 20px;
-        z-index: 1000;
+        z-index: 99;
     }
     .main_layout_grid{
         grid-template-columns: 1fr;
