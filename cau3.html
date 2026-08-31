@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">Lê Văn Huy | 070206007733</a>
+        <nav>
+            <a href="cau1.html"class="active">Câu 1</a>
+            <a href="cau2.html">Câu 2</a>
+            <a href="cau3.html">Câu 3</a>
+            <a href="project.html">Câu 4</a>
+        </nav>
+    </header>
+    <main>
+    <div class="form_container">
+        <h2 class="form_title">ĐĂNG KÝ THÔNG TIN CƯ TRÚ</h2>
+        <form id="residenceForm">
+            <div class="form_group">
+                <label for="fullName">Họ và tên</label>
+                <input type="text" id="fullName" placeholder="Nhập họ và tên đầy đủ" required>
+            </div>
+
+            <div class="form_group">
+                <label for="citizenId">Số CCCD / Mã định danh</label>
+                <input type="text" id="citizenId" placeholder="Nhập số CCCD" required>
+            </div>
+
+            <div class="form_group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" placeholder="Nhập số điện thoại liên hệ" required>
+            </div>
+
+            <div class="form_group">
+                <label for="province">Tỉnh / Thành phố</label>
+                <select id="province" required>
+                    <option value="">Chọn Tỉnh / Thành phố</option>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <label for="ward">Xã / Phường </label>
+                <select id="ward" disabled required>
+                    <option value="">Vui lòng chọn Tỉnh/Thành trước</option>
+                </select>
+            </div>
+
+            <div class="form_group">
+                <label for="addressDetail">Địa chỉ chi tiết</label>
+                <input type="text" id="addressDetail" placeholder="Ví dụ: Số 12, Đường 3/2" required>
+            </div>
+            <button type="submit" class="btn_submit">Đăng ký cư trú</button>
+        </form>
+    </div>
+</main>
+<script src="cau_3.js"></script>
+</body>
+</html>

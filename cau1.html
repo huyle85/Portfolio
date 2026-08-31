@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">Lê Văn Huy | 070206007733 <br> <br>
+                     Ứng dụng "CUNG HOÀNG ĐẠO"           
+        </a>
+        <nav>
+            <a href="cau1.html"class="active">Câu 1</a>
+            <a href="cau2.html">Câu 2</a>
+            <a href="cau3.html">Câu 3</a>
+            <a href="project.html">Câu 4</a>
+        </nav>
+    </header>
+    <main>
+    <section class="home">
+        <div class="home_contex">
+            <label for="day">Ngày</label>
+            <select name="" id="day"></select>
+            <label for="month">Tháng</label>
+            <select name="" id="month" onchange="update_day()"></select>
+            <label for="year">Năm</label>
+            <select name="" id="year" onchange="update_day()"></select>
+            <button id="search">Tra cứu</button>
+            </div>
+            <div class="result">
+                <div class="container_result">
+                    <h3>Thiên Can - Địa Chi</h3>
+                    <p id="txtCanChi"></p>
+                    <div class="home_img">
+                        <img src="avt_huyle.jpg" alt="anh minh hoa" class="img">
+                        <div>
+                            <h3>Cung Hoàng Đạo</h3>
+                            <p id="txtCung"></p>
+                        </div>
+                        <img src="avt_huyle.jpg" alt="anh minh hoa" class="img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="cau_1.js"></script>
+</body>
+</html>
