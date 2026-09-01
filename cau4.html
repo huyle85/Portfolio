@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="#">Lê Văn Huy | 070206007733</a>
+        <nav>
+            <a href="cau1.html"class="active">Câu 1</a>
+            <a href="cau2.html">Câu 2</a>
+            <a href="cau3.html">Câu 3</a>
+            <a href="cau4.html">Câu 4</a>
+        </nav>
+    </header>
+    <main class="weather-page">
+        <div class="container-weather">
+            <h2>ỨNG DỤNG THỜI TIẾT</h2>
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Nhập tên thành phố">
+                <button id="searchBtn" type="button">Xem thời tiết</button>
+            </div>
+
+            <div class="weather-result" id="weatherResult">
+                <p class="temp-text">Nhiệt độ: <span id="temperature">--</span></p>
+                <p class="humidity-text">Độ ẩm: <span id="humidity">--</span></p>
+                <small class="hint-text">Lưu ý: Hệ thống tra cứu theo cơ sở dữ liệu OpenWeatherMap quốc tế (chủ yếu lưu trữ tên Thành phố/Đô thị theo địa giới trước sáp nhập). Để tránh không tìm thấy hoặc trùng tên với các xã khác, vui lòng nhập tên đô thị trung tâm (Ví dụ: 'Thu Dau Mot' thay vì 'Binh Duong', 'Bien Hoa' thay vì 'Dong Nai',...)</small>
+            </div>
+        </div>
+    </main>
+    <script src="cau_4.js"></script>
+</body>
+</html>

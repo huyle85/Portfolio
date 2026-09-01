@@ -278,11 +278,99 @@ section {
 
 
 
+/* cau4 */
+/* Canh giữa toàn bộ khối main */
+.weather-page {
+    margin-top: 4.5rem;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container-weather {
+    background: white;
+    padding: 30px;
+    border-radius: 5%;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container-weather h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #c9490d;
+}
+
+.search-box button {
+    padding: 12px;
+    font-size: 0.95rem;
+    color: #fff;
+    background-color: #d97706;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 
 
+.weather-result {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+}
 
+.weather-result .city-name {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: black;
+}
 
+.weather-result .temp-text,
+.weather-result .humidity-text {
+    font-size: 1rem;
+    color: black;
+}
+
+.weather-result span {
+    font-weight: bold;
+    color: black;
+}
+.hint-text {
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    font-size: 0.8rem;
+    color: #888888;     
+    line-height: 1.4;
+    text-align: left;
+}
 
 
 
